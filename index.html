@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <script src="ultimoResultado.js"></script>
+    <title>💸Conversor de Moedas💸</title>
+</head>
+<body class="Tema_Claro">
+    <div class="toggle" id="toggle">
+        <div class="circle"></div>
+    </div>
+    <div class="bloco_principal">
+        <h1>💸Conversor de Moedas💸</h1>
+        <div>
+            <label>De:</label>
+            <div class="entrada">
+                <input type="number"  placeholder="Digite o valor aqui" class="valor">
+                <select class="moeda">
+                    <option>BTC</option>
+                    <option>BRL</option>
+                    <option>USDT</option>
+                </select>
+            </div>
+
+            <label>Para:</label>
+            <div class="saida">
+                <input type="number" value="" readonly class="valor">
+                <select class="moeda">
+                    <option>BTC</option>
+                    <option>BRL</option>
+                    <option>USDT</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="Script/AppWeb.js"></script>
+</body>
+</html>

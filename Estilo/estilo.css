@@ -1,0 +1,221 @@
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Tema Escuro */
+
+.Tema_Escuro{
+    background-color: rgb(49, 48, 48);
+    font-family: "Poppins";
+}
+.Tema_Escuro .bloco_principal{
+    background-color: rgb(35, 34, 34);
+    color: rgb(224, 230, 236);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 10px 15px rgba(13, 126, 53, 0.377);
+}
+
+/* Tema Claro */
+
+.Tema_Claro{
+    background-color: whitesmoke;
+    font-family: "Poppins";
+}
+
+.Tema_Claro .bloco_principal{
+    background-color: rgb(228, 228, 228);
+    color: rgb(30, 30, 30);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 1px 6px 10px 7px rgba(0, 0, 0, 0.137);
+}
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-family: "Poppins";
+}
+
+.bloco_principal{
+    width: 100%;
+    max-width: 500px;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+main{
+    padding: 2em;
+    border-radius: 1em;
+}
+
+label{
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+input{
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-family: monospace;
+}
+
+.entrada, .saida{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.entrada input, .saida input{
+    width: 100%;
+}
+
+select{
+    height: 2.5rem;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets (768px e acima) */
+@media (min-width: 768px) {
+    body{
+        padding: 2em;
+    }
+    
+    .bloco_principal{
+        max-width: 600px;
+    }
+    
+    label{
+        font-size: 1.5rem;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+    }
+    
+    .btn{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+/* Desktop (1024px e acima) */
+@media (min-width: 1024px) {
+    body{
+        padding: 3em;
+    }
+    
+    .bloco_principal{
+        max-width: 700px;
+    }
+    
+    label{
+        font-size: 1.6rem;
+    }
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    .btn{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+    .bloco_principal{
+        padding: 1.5em;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    label{
+        font-size: 1.1rem;
+    }
+    
+    input, select{
+        font-size: 16px;
+    }
+    
+    .btn{
+        width: 2.8rem;
+        height: 2.8rem;
+        top: 0.8em;
+        right: 0.8em;
+    }
+}
+
+/* Interruptor */
+.toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #585656;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    top: 1em;
+    right: 2em;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Fundo quando estiver ativo */
+.toggle.active {
+    background-color: #4caf50;
+}
+
+/* Bolinha */
+.circle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+/* Movimento da bolinha */
+.toggle.active .circle {
+    transform: translateX(30px);
+}
