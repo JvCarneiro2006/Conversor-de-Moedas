@@ -18,6 +18,11 @@
     box-shadow: 1px 1px 10px 15px rgba(13, 126, 53, 0.377);
 }
 
+.Tema_Escuro footer{
+    color: rgb(224, 230, 236);
+    background-color: rgb(35, 34, 34);
+}
+
 /* Tema Claro */
 
 .Tema_Claro{
@@ -33,6 +38,11 @@
     box-shadow: 1px 6px 10px 7px rgba(0, 0, 0, 0.137);
 }
 
+.Tema_Claro footer{
+    color: rgb(30, 30, 30);
+    background-color: rgb(228, 228, 228);
+}
+
 /* Geral */
 
 *{
@@ -45,6 +55,7 @@ body{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1em;
@@ -103,6 +114,14 @@ h1{
     font-size: 1.8rem;
     margin-bottom: 1.5em;
     text-align: center;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: auto;
+    border-top: 1px solid #ccc;
 }
 
 /* Media Queries para Responsividade */
